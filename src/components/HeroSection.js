@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
+import {Link} from 'react-router-dom'
 
 function HeroSection() {
   return (
@@ -17,14 +18,15 @@ function HeroSection() {
         >
           GET STARTED
         </Button>
+        <Link to="/video">
         <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
         >
           WATCH TRAILER <i className='far fa-play-circle' />
         </Button>
+        </Link>
       </div>
     </div>
   );
